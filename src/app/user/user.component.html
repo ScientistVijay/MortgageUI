@@ -1,0 +1,17 @@
+<table>
+
+        <th>Transaction description</th>
+        <th>Spend Category</th>
+        <th>Amount</th>
+        <th>Date</th>
+        <th>PaymentType</th>  
+  <tr *ngFor = "let product of products">
+  
+    <td *ngIf="products?.length > 0">{{product.transaction_details}}</td> 
+<td *ngIf="products?.length > 0">{{product.spend_category}}</td>
+    <td *ngIf="products?.length > 0">{{product.amount}}</td>
+    <td *ngIf="products?.length > 0">{{product.date}}</td>
+    <td *ngIf="products?.length > 0">{{product.makePayment}}</td>
+</tr>  
+</table>
+<a routerLink="/transaction">Next</a>
