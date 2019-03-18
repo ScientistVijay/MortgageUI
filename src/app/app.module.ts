@@ -8,9 +8,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { RegisterService } from './register.service'
 import { UserComponent } from './user/user.component';
 import { HttpClientModule} from '@angular/common/http';
-import { PolicyserviceService } from './serice-policy.service';
-import { TransComponent } from './trans/trans.component';
 import { RegisterComponent } from './register/register.component';
+import {AuthenticationService} from './authentication.service';
 
 
 const appRoutes:Routes = [
@@ -28,12 +27,6 @@ const appRoutes:Routes = [
   
     component: DashboardComponent
   },
-  {
-    path: 'transaction',
-  
-    component: TransComponent
-  }
-,
 {
   path:'register',
   component: RegisterComponent
@@ -47,7 +40,6 @@ const appRoutes:Routes = [
     LoginFormComponent, 
     DashboardComponent,
     UserComponent,
-    TransComponent,
     RegisterComponent
     ],
 
@@ -57,7 +49,7 @@ const appRoutes:Routes = [
   HttpClientModule,
   FormsModule
   ],
-  providers: [RegisterService],
+  providers: [RegisterService,AuthenticationService],
   bootstrap: [AppComponent]
 })
 

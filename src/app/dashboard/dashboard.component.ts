@@ -1,9 +1,9 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import {UserService} from '../user.service';
+
 import {HttpClient } from '@angular/common/http';
-import {PolicyserviceService} from '../serice-policy.service';
+
 
 
 @Component({
@@ -15,7 +15,7 @@ export class DashboardComponent implements OnInit {
  	
   name = '';
 
-  constructor(private user: UserService, private httpss: HttpClient,private policy :PolicyserviceService) {
+  constructor( private httpss: HttpClient) {
  
    }
 
@@ -53,7 +53,7 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit() {
    // this.getData();
-  	this.name = this.user.username;
+  //	this.name = this.user.username;
   //	console.log('Is user logged in? ', this.user.getUserLoggedIn())
   }
 

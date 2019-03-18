@@ -9,42 +9,46 @@
     <label>Color: </label><input type = "text" name="color" id="color" placeholder="color" ngModel><br>
     <input type="submit" value = "Add Product" routerLink="/users">
   </form> -->
-<h1>iSmart</h1>
+<h1>Mortgage Lenders</h1>
 <form id = "formNewProduct" name = "formNewProduct" #productData = "ngForm">
  
   <table class="table" class="table table-dark" >
         <tr>
-          <td> <label>Transaction description </label></td>
-         <td><input type = "text" name="transaction_details" id="transaction_details" placeholder="name" ngModel><br></td>
+          <td> <label>Name </label></td>
+         <td><input type = "text" name="name" id="name" placeholder="name" ngModel><br></td>
        </tr>
        <tr>
-          <td> <label>Spend Category </label></td>
-          <select id="spend_category">
-              <option value="Medical" id="medical">Medical</option>
-              <option value="Travel" id="travel">Travel</option>
-              <option value="Loans" id="loan">Loans</option>
-              <option value="Utility Bills" id="bills">UtilityBills</option>
-              <option value="Education">Education</option>
-              <option value="Shopping">Shopping</option>
-              <option value="Misc">Misc</option>
-            </select>
-         
-       </tr>
+          <td> <label>DateOfBirth</label></td>
+          <td><input type = "date" name="date" id="date" placeholder="name" ngModel><br></td>
+          </tr>
        <tr>
-          <td> <label>Amount </label></td>
-         <td><input type = "text" name="amount" id="amount" ngModel><br></td>
+          <td> <label>Gender </label></td>
+          <select id="gender">
+            <option value="Male" id="male">Male</option>
+            <option value="Female" id="female">Female</option>
+          </select>
        </tr>
        <tr>
           <td> <label>Date </label></td>
-         <td><input type = "text" name="date" id="date" placeholder="date" ngModel><br></td>
+          <td><input type = "date" name="date" id="date" ngModel><br></td>
+       </tr>
+    
+       <tr>
+          <td> <label>Pancard ID </label></td>
+          <td><input type = "text" name="pancard" id="pancard" ngModel><br></td>
        </tr>
        <tr>
-          <td> <label>Payment Type </label></td>
-          <select id="paymentType">
-              <option value="MakePayment" id="makePayment">MakePayment</option>
-              <option value="RecievePayment">RecievePayment</option>
-            </select>
-       </tr>
+        <td> <label>Salary </label></td>
+        <td><input type = "text" name="pancard" id="pancard" ngModel><br></td>
+     </tr>
+     <tr>
+      <td> <label>Second Income </label></td>
+      <td><input type = "text" name="pancard" id="pancard" ngModel><br></td>
+   </tr>
+   <tr>
+    <td> <label>Other Income </label></td>
+    <td><input type = "text" name="pancard" id="pancard" ngModel><br></td>
+ </tr>
  </table>
   <!-- <button type="submit"  routerLink="/users">add </button> -->
   <!-- <button type="submit" class="btn btn-success">Submit</button> -->
